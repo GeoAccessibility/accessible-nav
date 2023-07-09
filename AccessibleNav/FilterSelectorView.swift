@@ -44,7 +44,7 @@ struct FilterSelectorView: View {
                 }
                 HStack {
                     Slider(value: $optElevation, in: 0...40)
-                    Text("\(String(optElevation)) km")
+                    Text("\(String(Int(optElevation))) km")
                 }
             }
             Spacer()
