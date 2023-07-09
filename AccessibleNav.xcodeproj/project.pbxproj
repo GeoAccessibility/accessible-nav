@@ -10,6 +10,7 @@
 		EA0D03E22A5A5A53000543BD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D03E12A5A5A53000543BD /* SplashView.swift */; };
 		EA0D03E42A5A7BF1000543BD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D03E32A5A7BF1000543BD /* SignInView.swift */; };
 		EA1267052A5AD47100D28CC0 /* FilterSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1267042A5AD47100D28CC0 /* FilterSelectorView.swift */; };
+		EA1267072A5ADF2100D28CC0 /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1267062A5ADF2100D28CC0 /* ETA.swift */; };
 		EA95C0212A5A98F00078E0F7 /* LocationSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95C0202A5A98F00078E0F7 /* LocationSelector.swift */; };
 		EA95C0232A5AB8040078E0F7 /* CurrentDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95C0222A5AB8040078E0F7 /* CurrentDirection.swift */; };
 		EAA8F6DE2A5A524E00A67B97 /* AccessibleNavApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8F6DD2A5A524E00A67B97 /* AccessibleNavApp.swift */; };
@@ -22,6 +23,7 @@
 		EA0D03E12A5A5A53000543BD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		EA0D03E32A5A7BF1000543BD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		EA1267042A5AD47100D28CC0 /* FilterSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSelectorView.swift; sourceTree = "<group>"; };
+		EA1267062A5ADF2100D28CC0 /* ETA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ETA.swift; path = NavComponents/ETA.swift; sourceTree = "<group>"; };
 		EA95C0202A5A98F00078E0F7 /* LocationSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationSelector.swift; path = NavComponents/LocationSelector.swift; sourceTree = "<group>"; };
 		EA95C0222A5AB8040078E0F7 /* CurrentDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentDirection.swift; path = NavComponents/CurrentDirection.swift; sourceTree = "<group>"; };
 		EAA8F6DA2A5A524E00A67B97 /* AccessibleNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibleNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 			children = (
 				EAA8F6DD2A5A524E00A67B97 /* AccessibleNavApp.swift */,
 				EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */,
+				EA1267062A5ADF2100D28CC0 /* ETA.swift */,
 				EA0D03E32A5A7BF1000543BD /* SignInView.swift */,
 				EA0D03E12A5A5A53000543BD /* SplashView.swift */,
 				EAA8F6E12A5A525000A67B97 /* Assets.xcassets */,
@@ -158,6 +161,7 @@
 				EA95C0232A5AB8040078E0F7 /* CurrentDirection.swift in Sources */,
 				EA0D03E42A5A7BF1000543BD /* SignInView.swift in Sources */,
 				EA0D03E22A5A5A53000543BD /* SplashView.swift in Sources */,
+				EA1267072A5ADF2100D28CC0 /* ETA.swift in Sources */,
 				EA1267052A5AD47100D28CC0 /* FilterSelectorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

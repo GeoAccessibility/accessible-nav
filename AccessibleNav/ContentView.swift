@@ -8,14 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isNavigating: Bool = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if !isNavigating {
+            ZStack {
+                Image("Map")
+                    .resizable()
+                    .scaledToFill()
+                VStack {
+                    Spacer(minLength: 0.5 * UIScreen.main.bounds.height)
+                    LocationSelector()
+                        .frame(width: UIScreen.main.bounds.width)
+                        .shadow(radius: 10)
+                }
+            }
+        } else {
+            ZStack {
+                Image("Map")
+                    .resizable()
+                    .scaledToFill()
+                VStack {
+                    CurrentDirection()
+                        .frame(width: UIScreen.main.bounds.width)
+                        .shadow(radius: 10)
+                    Spacer(minLength: 0.7 * UIScreen.main.bounds.height)
+                }
+                VStack {
+                    Spacer(minLength: 0.6 * UIScreen.main.bounds.height)
+                    ETA()
+                        .frame(width: UIScreen.main.bounds.width)
+                        .shadow(radius: 10)
+                }
+            }
         }
-        .padding()
     }
 }
 
