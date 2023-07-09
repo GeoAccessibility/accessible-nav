@@ -17,16 +17,17 @@ struct SplashView: View {
                     width: 1.15 * UIScreen.main.bounds.width,
                     height: 1.15 * UIScreen.main.bounds.height
                 )
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
             VStack {
                 Image("AppLogo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200)
                 Text("NavigAbility Solutions")
-                    .fontWeight(.bold)
+                    .fontWeight(.heavy)
                     .foregroundColor(.white)
                     .font(.system(size: 30))
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
                 Text("Making navigation accessible")
                     .italic()
                     .fontWeight(.bold)
