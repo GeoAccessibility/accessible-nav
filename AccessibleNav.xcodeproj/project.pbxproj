@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EA0D03E22A5A5A53000543BD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D03E12A5A5A53000543BD /* SplashView.swift */; };
 		EA0D03E42A5A7BF1000543BD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D03E32A5A7BF1000543BD /* SignInView.swift */; };
+		EA95C0212A5A98F00078E0F7 /* LocationSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95C0202A5A98F00078E0F7 /* LocationSelector.swift */; };
+		EA95C0232A5AB8040078E0F7 /* CurrentDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95C0222A5AB8040078E0F7 /* CurrentDirection.swift */; };
 		EAA8F6DE2A5A524E00A67B97 /* AccessibleNavApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8F6DD2A5A524E00A67B97 /* AccessibleNavApp.swift */; };
 		EAA8F6E02A5A524E00A67B97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */; };
 		EAA8F6E22A5A525000A67B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA8F6E12A5A525000A67B97 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		EA0D03E12A5A5A53000543BD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		EA0D03E32A5A7BF1000543BD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		EA95C0202A5A98F00078E0F7 /* LocationSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationSelector.swift; path = NavComponents/LocationSelector.swift; sourceTree = "<group>"; };
+		EA95C0222A5AB8040078E0F7 /* CurrentDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentDirection.swift; path = NavComponents/CurrentDirection.swift; sourceTree = "<group>"; };
 		EAA8F6DA2A5A524E00A67B97 /* AccessibleNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibleNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA8F6DD2A5A524E00A67B97 /* AccessibleNavApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleNavApp.swift; sourceTree = "<group>"; };
 		EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				EA0D03E32A5A7BF1000543BD /* SignInView.swift */,
 				EA0D03E12A5A5A53000543BD /* SplashView.swift */,
 				EAA8F6E12A5A525000A67B97 /* Assets.xcassets */,
+				EA95C0202A5A98F00078E0F7 /* LocationSelector.swift */,
+				EA95C0222A5AB8040078E0F7 /* CurrentDirection.swift */,
 				EAA8F6E32A5A525000A67B97 /* Preview Content */,
 			);
 			path = AccessibleNav;
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA95C0212A5A98F00078E0F7 /* LocationSelector.swift in Sources */,
 				EAA8F6E02A5A524E00A67B97 /* ContentView.swift in Sources */,
 				EAA8F6DE2A5A524E00A67B97 /* AccessibleNavApp.swift in Sources */,
+				EA95C0232A5AB8040078E0F7 /* CurrentDirection.swift in Sources */,
 				EA0D03E42A5A7BF1000543BD /* SignInView.swift in Sources */,
 				EA0D03E22A5A5A53000543BD /* SplashView.swift in Sources */,
 			);
