@@ -54,7 +54,7 @@ struct SplashView: View {
     }
 }
 
-struct SplashViewPreview: PreviewProvider {
+struct SplashView_Preview: PreviewProvider {
     static var previews: some View {
         SplashView()
     }
