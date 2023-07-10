@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000A88390659362283D351E500AFF14D /* Stretchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A28E2CD34CE23E1F0D6D5089B5B19 /* Stretchable.swift */; };
+		07072D721FCA63534C1A5391C2F73584 /* PathPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD393FDBA54A074A2D3D863077F427 /* PathPoint.swift */; };
+		107F0F943812F8257091CDBAB46AC05C /* Pods-AccessibleNav-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C8227685F11475C53200B3D2A6536DA /* Pods-AccessibleNav-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		136BAC0BFBCD203662B0506C60B0182F /* Euclid+SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D166755E22EFEFC9ECBDFC0CDA6CBF /* Euclid+SceneKit.swift */; };
+		1376C6A73F277E81D190A6F7FE087256 /* Mesh+Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74052EA0D5FA043D5A7C7FC2B7E027A3 /* Mesh+Shapes.swift */; };
+		1378A81F62C86ECB39112C1CEF684AEA /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579E2DA1EDAA6E5FEB133FE7853F3D7 /* Line.swift */; };
+		1FCD0B99855F57681AB891B83F1B6BC3 /* Pods-AccessibleNav-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF9544D861C27DCBB6EA6401909866 /* Pods-AccessibleNav-dummy.m */; };
+		39CE998CF1B9AABB4B9410F52E259FD2 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609EF40457CA225B3AFD09B64A212FC /* Plane.swift */; };
+		3DB01C429F78A3166318F862666D2A2B /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FC8FB87BE38546AF8F5339E973075E /* Vector.swift */; };
+		403CAE19A002C170DC0F6006FAF87027 /* Polygon+CSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C46821EA3ED58E51DE6F8898BA95AB /* Polygon+CSG.swift */; };
+		42774226C39486024892F8AB85543BC3 /* Euclid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6065ECE719A40A8AB8E5CEC74539D22 /* Euclid-dummy.m */; };
+		4B37AC7C84A830702D2CC42396B42705 /* Path+Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063804970CFCF2828FC5C2D34DFEA3C /* Path+Shapes.swift */; };
+		59D6F8208EDABD663ACED6DECDB7CDF4 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AABBC7D255486680838C773415F756E /* Mesh.swift */; };
+		5C8E56571BD85A71242DEC7BF538015B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		69DC1A00E783652A06FF5A5460578ACE /* Mesh+CSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D3F49B413ED9995C65B306DB7B6AE /* Mesh+CSG.swift */; };
+		6DCE7EBC10DBB0D9651FBB9F1DFB71C6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061C5568728337996620E4B38DD8F0C /* Utilities.swift */; };
+		73BD39D80F3F1CD5ED2255EF3B7CEF50 /* Euclid+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8133F785954FF891ADA15450654146E /* Euclid+AppKit.swift */; };
+		8168313FD387FD048B03F67C479E7210 /* BSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA1E20C35B051B3BC4D621B6CE27BC3 /* BSP.swift */; };
+		886B1026D95D1DC60EE23690E8B29F49 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D9A5E313F48A138A70A2B8C4D9ADB /* Polygon.swift */; };
+		92456C2321C2CDD61D124661049EF94F /* Euclid+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244F6905B212909094AE619652185C2 /* Euclid+CoreGraphics.swift */; };
+		9260A6FCD9D004962F2EA0AEB64E1312 /* Euclid+SIMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B2A2B94A26D0DB1BD86CE2043189 /* Euclid+SIMD.swift */; };
+		938A5E82076674719905D76942CB381B /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291E5323AB2D84C709A40147613B41E /* Angle.swift */; };
+		A0872F1F1196C83462623FB7DBC678BD /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D99BB68EADBFDF39C7C8A541716DEE7 /* Bounds.swift */; };
+		A7D83BA36896FE0A02CC8F73675DC76F /* Euclid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6B30F5E28985A0B409ECB74F242E48 /* Euclid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8DBD1D7F91EBD6B4E03F98A30EC7EBF /* Euclid+RealityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E8E47DA7F9C8911EE3BE9A01F35D7 /* Euclid+RealityKit.swift */; };
+		AAF8C99E62CAEB1749B14A5A80730777 /* Mesh+STL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713EFA43158B2C71F9AF56F93C89252 /* Mesh+STL.swift */; };
+		AC749030D2188264368914730E4A7240 /* Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C62D0EB5BF686B021CBBE6EDDA590 /* Rotation.swift */; };
+		BC6B4CAAFA16DEABDE5FD7EBBB5EBB28 /* Euclid+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F069B09DD8C37DC5492E840510EEE79 /* Euclid+UIKit.swift */; };
+		BE1DBDB1AC4CC666F44FB1FF953786C6 /* Quaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A86A2B3ED417D04EC3071D6576B1EAA /* Quaternion.swift */; };
+		C208ED92F2EACE2E7E77FB6B36AAEE44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C943C19B647E300AFADB49A07404A0AE /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D6C206EFE064D93E360C178EA4850F /* Vertex.swift */; };
+		D0A3E44BE3DEDB7FA2C57A1A62380A94 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E219BF6B9DA48EE5657B5E7A9C435C2 /* Path.swift */; };
+		E48A9F5CFDD5FD950C2A7F88C6396FDD /* Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D7C15A771B8EEF5C925EDDF7AD45D4 /* Transforms.swift */; };
+		E83F16F0429E8AEC2C4851B9DBC39A55 /* Euclid.h in Headers */ = {isa = PBXBuildFile; fileRef = 92170251AD1878A025A3DCE42439AFB5 /* Euclid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB73BD363821CB04895D3E92CBCDDCA9 /* LineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99DFE16E1B97AEDE14B84EC822CE04C /* LineSegment.swift */; };
+		F4BFA7983FA32CB84655315328631420 /* Euclid+CoreText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CCFB66C64DB0DDF3642BFEC7F101E3 /* Euclid+CoreText.swift */; };
+		F8B23668F67CCB10598EE06D5F06C1C2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD67787B8F76890878A407745CABDA1 /* Color.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4243382EBF4E3B9A74E04AD2AB99515C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE47191A99A0611690C277CCDA990A80;
+			remoteInfo = Euclid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0244F6905B212909094AE619652185C2 /* Euclid+CoreGraphics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Euclid+CoreGraphics.swift"; path = "Sources/Euclid+CoreGraphics.swift"; sourceTree = "<group>"; };
+		1063804970CFCF2828FC5C2D34DFEA3C /* Path+Shapes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Path+Shapes.swift"; path = "Sources/Path+Shapes.swift"; sourceTree = "<group>"; };
+		12BEEDCF86D3E148A3E430CF728D65DA /* Euclid-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Euclid-Info.plist"; sourceTree = "<group>"; };
+		1E219BF6B9DA48EE5657B5E7A9C435C2 /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Path.swift; path = Sources/Path.swift; sourceTree = "<group>"; };
+		2BD67787B8F76890878A407745CABDA1 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Sources/Color.swift; sourceTree = "<group>"; };
+		2C8C62D0EB5BF686B021CBBE6EDDA590 /* Rotation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rotation.swift; path = Sources/Rotation.swift; sourceTree = "<group>"; };
+		2F069B09DD8C37DC5492E840510EEE79 /* Euclid+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Euclid+UIKit.swift"; path = "Sources/Euclid+UIKit.swift"; sourceTree = "<group>"; };
+		2FC94C16E10E30AC367FCFA82AC811B1 /* Euclid */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Euclid; path = Euclid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3061C5568728337996620E4B38DD8F0C /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Sources/Utilities.swift; sourceTree = "<group>"; };
+		30D7C15A771B8EEF5C925EDDF7AD45D4 /* Transforms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transforms.swift; path = Sources/Transforms.swift; sourceTree = "<group>"; };
+		3291E5323AB2D84C709A40147613B41E /* Angle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Angle.swift; path = Sources/Angle.swift; sourceTree = "<group>"; };
+		3C8227685F11475C53200B3D2A6536DA /* Pods-AccessibleNav-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AccessibleNav-umbrella.h"; sourceTree = "<group>"; };
+		3D99BB68EADBFDF39C7C8A541716DEE7 /* Bounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bounds.swift; path = Sources/Bounds.swift; sourceTree = "<group>"; };
+		3DC2CB915F7F85374040F2C71D87F40C /* Euclid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Euclid-prefix.pch"; sourceTree = "<group>"; };
+		4334F889F860E64231D3331391A162CA /* Pods-AccessibleNav-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AccessibleNav-acknowledgements.plist"; sourceTree = "<group>"; };
+		46D6C206EFE064D93E360C178EA4850F /* Vertex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vertex.swift; path = Sources/Vertex.swift; sourceTree = "<group>"; };
+		48CCFB66C64DB0DDF3642BFEC7F101E3 /* Euclid+CoreText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Euclid+CoreText.swift"; path = "Sources/Euclid+CoreText.swift"; sourceTree = "<group>"; };
+		54B376A442D26AE9E4F08320885D17DF /* Pods-AccessibleNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AccessibleNav.debug.xcconfig"; sourceTree = "<group>"; };
+		595A28E2CD34CE23E1F0D6D5089B5B19 /* Stretchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stretchable.swift; path = Sources/Stretchable.swift; sourceTree = "<group>"; };
+		6219EC6AE7A3AFD34B67DF69C9771EB0 /* Euclid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Euclid.modulemap; sourceTree = "<group>"; };
+		66EE40D7815FF74CD924802B43439930 /* Euclid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Euclid.debug.xcconfig; sourceTree = "<group>"; };
+		6ABF7294CFEA2F79528A14B9A77B6DD6 /* Pods-AccessibleNav */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AccessibleNav"; path = Pods_AccessibleNav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C46821EA3ED58E51DE6F8898BA95AB /* Polygon+CSG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Polygon+CSG.swift"; path = "Sources/Polygon+CSG.swift"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74052EA0D5FA043D5A7C7FC2B7E027A3 /* Mesh+Shapes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Mesh+Shapes.swift"; path = "Sources/Mesh+Shapes.swift"; sourceTree = "<group>"; };
+		83022CCE8945213919471DA4C601342C /* Euclid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Euclid.release.xcconfig; sourceTree = "<group>"; };
+		92170251AD1878A025A3DCE42439AFB5 /* Euclid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Euclid.h; path = Sources/Euclid.h; sourceTree = "<group>"; };
+		9713EFA43158B2C71F9AF56F93C89252 /* Mesh+STL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Mesh+STL.swift"; path = "Sources/Mesh+STL.swift"; sourceTree = "<group>"; };
+		9889FF5D7DA3DA8F322F59354320D8AE /* Pods-AccessibleNav-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AccessibleNav-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A86A2B3ED417D04EC3071D6576B1EAA /* Quaternion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Quaternion.swift; path = Sources/Quaternion.swift; sourceTree = "<group>"; };
+		9AABBC7D255486680838C773415F756E /* Mesh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mesh.swift; path = Sources/Mesh.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A26B01B83608C8ED894410E6A9A4400C /* Pods-AccessibleNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AccessibleNav.release.xcconfig"; sourceTree = "<group>"; };
+		A579E2DA1EDAA6E5FEB133FE7853F3D7 /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Sources/Line.swift; sourceTree = "<group>"; };
+		A94D9A5E313F48A138A70A2B8C4D9ADB /* Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polygon.swift; path = Sources/Polygon.swift; sourceTree = "<group>"; };
+		AF53DDEFDB532B60F005BC8EB1064631 /* Pods-AccessibleNav-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AccessibleNav-Info.plist"; sourceTree = "<group>"; };
+		AFFD393FDBA54A074A2D3D863077F427 /* PathPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathPoint.swift; path = Sources/PathPoint.swift; sourceTree = "<group>"; };
+		B70E8E47DA7F9C8911EE3BE9A01F35D7 /* Euclid+RealityKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Euclid+RealityKit.swift"; path = "Sources/Euclid+RealityKit.swift"; sourceTree = "<group>"; };
+		C2D2B2A2B94A26D0DB1BD86CE2043189 /* Euclid+SIMD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Euclid+SIMD.swift"; path = "Sources/Euclid+SIMD.swift"; sourceTree = "<group>"; };
+		C6065ECE719A40A8AB8E5CEC74539D22 /* Euclid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Euclid-dummy.m"; sourceTree = "<group>"; };
+		CAFF9544D861C27DCBB6EA6401909866 /* Pods-AccessibleNav-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AccessibleNav-dummy.m"; sourceTree = "<group>"; };
+		D05864F763A114E52E6DE2B76F30FB2A /* Pods-AccessibleNav-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AccessibleNav-frameworks.sh"; sourceTree = "<group>"; };
+		D8133F785954FF891ADA15450654146E /* Euclid+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Euclid+AppKit.swift"; path = "Sources/Euclid+AppKit.swift"; sourceTree = "<group>"; };
+		E0FC8FB87BE38546AF8F5339E973075E /* Vector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vector.swift; path = Sources/Vector.swift; sourceTree = "<group>"; };
+		ED4C82EB1C31FCA17FF56D74EC05C687 /* Pods-AccessibleNav.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AccessibleNav.modulemap"; sourceTree = "<group>"; };
+		F609EF40457CA225B3AFD09B64A212FC /* Plane.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plane.swift; path = Sources/Plane.swift; sourceTree = "<group>"; };
+		F8D166755E22EFEFC9ECBDFC0CDA6CBF /* Euclid+SceneKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Euclid+SceneKit.swift"; path = "Sources/Euclid+SceneKit.swift"; sourceTree = "<group>"; };
+		F99DFE16E1B97AEDE14B84EC822CE04C /* LineSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineSegment.swift; path = Sources/LineSegment.swift; sourceTree = "<group>"; };
+		FB6B30F5E28985A0B409ECB74F242E48 /* Euclid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Euclid-umbrella.h"; sourceTree = "<group>"; };
+		FEA1E20C35B051B3BC4D621B6CE27BC3 /* BSP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSP.swift; path = Sources/BSP.swift; sourceTree = "<group>"; };
+		FF4D3F49B413ED9995C65B306DB7B6AE /* Mesh+CSG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Mesh+CSG.swift"; path = "Sources/Mesh+CSG.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37706FD286FA8D21AD2C2CF5A47F7652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C208ED92F2EACE2E7E77FB6B36AAEE44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680B1415DF2054841319D737B0D09350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C8E56571BD85A71242DEC7BF538015B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CA4C5B49EECA3F29EB1E95D6E508B2 /* Pods-AccessibleNav */ = {
+			isa = PBXGroup;
+			children = (
+				ED4C82EB1C31FCA17FF56D74EC05C687 /* Pods-AccessibleNav.modulemap */,
+				9889FF5D7DA3DA8F322F59354320D8AE /* Pods-AccessibleNav-acknowledgements.markdown */,
+				4334F889F860E64231D3331391A162CA /* Pods-AccessibleNav-acknowledgements.plist */,
+				CAFF9544D861C27DCBB6EA6401909866 /* Pods-AccessibleNav-dummy.m */,
+				D05864F763A114E52E6DE2B76F30FB2A /* Pods-AccessibleNav-frameworks.sh */,
+				AF53DDEFDB532B60F005BC8EB1064631 /* Pods-AccessibleNav-Info.plist */,
+				3C8227685F11475C53200B3D2A6536DA /* Pods-AccessibleNav-umbrella.h */,
+				54B376A442D26AE9E4F08320885D17DF /* Pods-AccessibleNav.debug.xcconfig */,
+				A26B01B83608C8ED894410E6A9A4400C /* Pods-AccessibleNav.release.xcconfig */,
+			);
+			name = "Pods-AccessibleNav";
+			path = "Target Support Files/Pods-AccessibleNav";
+			sourceTree = "<group>";
+		};
+		1C2C84949C15155E8E39A3A95D3F2810 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDBC6FFCE0BA19494CDE4DD2D75BE859 /* Euclid */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D37EA7AB18B28D380530D1DA5E501DA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02CA4C5B49EECA3F29EB1E95D6E508B2 /* Pods-AccessibleNav */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4419FDACF739015251902F91DE804063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FC94C16E10E30AC367FCFA82AC811B1 /* Euclid */,
+				6ABF7294CFEA2F79528A14B9A77B6DD6 /* Pods-AccessibleNav */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45E70F99DEE08E812C465A6B5F4BECD9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6219EC6AE7A3AFD34B67DF69C9771EB0 /* Euclid.modulemap */,
+				C6065ECE719A40A8AB8E5CEC74539D22 /* Euclid-dummy.m */,
+				12BEEDCF86D3E148A3E430CF728D65DA /* Euclid-Info.plist */,
+				3DC2CB915F7F85374040F2C71D87F40C /* Euclid-prefix.pch */,
+				FB6B30F5E28985A0B409ECB74F242E48 /* Euclid-umbrella.h */,
+				66EE40D7815FF74CD924802B43439930 /* Euclid.debug.xcconfig */,
+				83022CCE8945213919471DA4C601342C /* Euclid.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Euclid";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CDBC6FFCE0BA19494CDE4DD2D75BE859 /* Euclid */ = {
+			isa = PBXGroup;
+			children = (
+				3291E5323AB2D84C709A40147613B41E /* Angle.swift */,
+				3D99BB68EADBFDF39C7C8A541716DEE7 /* Bounds.swift */,
+				FEA1E20C35B051B3BC4D621B6CE27BC3 /* BSP.swift */,
+				2BD67787B8F76890878A407745CABDA1 /* Color.swift */,
+				92170251AD1878A025A3DCE42439AFB5 /* Euclid.h */,
+				D8133F785954FF891ADA15450654146E /* Euclid+AppKit.swift */,
+				0244F6905B212909094AE619652185C2 /* Euclid+CoreGraphics.swift */,
+				48CCFB66C64DB0DDF3642BFEC7F101E3 /* Euclid+CoreText.swift */,
+				B70E8E47DA7F9C8911EE3BE9A01F35D7 /* Euclid+RealityKit.swift */,
+				F8D166755E22EFEFC9ECBDFC0CDA6CBF /* Euclid+SceneKit.swift */,
+				C2D2B2A2B94A26D0DB1BD86CE2043189 /* Euclid+SIMD.swift */,
+				2F069B09DD8C37DC5492E840510EEE79 /* Euclid+UIKit.swift */,
+				A579E2DA1EDAA6E5FEB133FE7853F3D7 /* Line.swift */,
+				F99DFE16E1B97AEDE14B84EC822CE04C /* LineSegment.swift */,
+				9AABBC7D255486680838C773415F756E /* Mesh.swift */,
+				FF4D3F49B413ED9995C65B306DB7B6AE /* Mesh+CSG.swift */,
+				74052EA0D5FA043D5A7C7FC2B7E027A3 /* Mesh+Shapes.swift */,
+				9713EFA43158B2C71F9AF56F93C89252 /* Mesh+STL.swift */,
+				1E219BF6B9DA48EE5657B5E7A9C435C2 /* Path.swift */,
+				1063804970CFCF2828FC5C2D34DFEA3C /* Path+Shapes.swift */,
+				AFFD393FDBA54A074A2D3D863077F427 /* PathPoint.swift */,
+				F609EF40457CA225B3AFD09B64A212FC /* Plane.swift */,
+				A94D9A5E313F48A138A70A2B8C4D9ADB /* Polygon.swift */,
+				70C46821EA3ED58E51DE6F8898BA95AB /* Polygon+CSG.swift */,
+				9A86A2B3ED417D04EC3071D6576B1EAA /* Quaternion.swift */,
+				2C8C62D0EB5BF686B021CBBE6EDDA590 /* Rotation.swift */,
+				595A28E2CD34CE23E1F0D6D5089B5B19 /* Stretchable.swift */,
+				30D7C15A771B8EEF5C925EDDF7AD45D4 /* Transforms.swift */,
+				3061C5568728337996620E4B38DD8F0C /* Utilities.swift */,
+				E0FC8FB87BE38546AF8F5339E973075E /* Vector.swift */,
+				46D6C206EFE064D93E360C178EA4850F /* Vertex.swift */,
+				45E70F99DEE08E812C465A6B5F4BECD9 /* Support Files */,
+			);
+			name = Euclid;
+			path = Euclid;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1C2C84949C15155E8E39A3A95D3F2810 /* Pods */,
+				4419FDACF739015251902F91DE804063 /* Products */,
+				2D37EA7AB18B28D380530D1DA5E501DA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32A50DEEC1D8BFCE6264940C10475166 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83F16F0429E8AEC2C4851B9DBC39A55 /* Euclid.h in Headers */,
+				A7D83BA36896FE0A02CC8F73675DC76F /* Euclid-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C729851AF26E78D6394A7FCEECBDE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				107F0F943812F8257091CDBAB46AC05C /* Pods-AccessibleNav-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2F246618D9DADBED431CB7F412FDC087 /* Pods-AccessibleNav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0EB36625586B225E587542C28D45646 /* Build configuration list for PBXNativeTarget "Pods-AccessibleNav" */;
+			buildPhases = (
+				F2C729851AF26E78D6394A7FCEECBDE7 /* Headers */,
+				B5CC60807617BA59C2C238A8785B91A5 /* Sources */,
+				37706FD286FA8D21AD2C2CF5A47F7652 /* Frameworks */,
+				2B1536436A2DF655D4B733A2E460E3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D568501F6FAEAEF2D7DE96C9FB68E3C2 /* PBXTargetDependency */,
+			);
+			name = "Pods-AccessibleNav";
+			productName = Pods_AccessibleNav;
+			productReference = 6ABF7294CFEA2F79528A14B9A77B6DD6 /* Pods-AccessibleNav */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE47191A99A0611690C277CCDA990A80 /* Euclid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DAE6D16640A0AE82285A8C3AC497A4B /* Build configuration list for PBXNativeTarget "Euclid" */;
+			buildPhases = (
+				32A50DEEC1D8BFCE6264940C10475166 /* Headers */,
+				6BE54A6DEF11245604DC6C01DBB61863 /* Sources */,
+				680B1415DF2054841319D737B0D09350 /* Frameworks */,
+				F3A0FFDF85CD606B1698AD3CD868EC21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Euclid;
+			productName = Euclid;
+			productReference = 2FC94C16E10E30AC367FCFA82AC811B1 /* Euclid */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4419FDACF739015251902F91DE804063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE47191A99A0611690C277CCDA990A80 /* Euclid */,
+				2F246618D9DADBED431CB7F412FDC087 /* Pods-AccessibleNav */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B1536436A2DF655D4B733A2E460E3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A0FFDF85CD606B1698AD3CD868EC21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BE54A6DEF11245604DC6C01DBB61863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938A5E82076674719905D76942CB381B /* Angle.swift in Sources */,
+				A0872F1F1196C83462623FB7DBC678BD /* Bounds.swift in Sources */,
+				8168313FD387FD048B03F67C479E7210 /* BSP.swift in Sources */,
+				F8B23668F67CCB10598EE06D5F06C1C2 /* Color.swift in Sources */,
+				73BD39D80F3F1CD5ED2255EF3B7CEF50 /* Euclid+AppKit.swift in Sources */,
+				92456C2321C2CDD61D124661049EF94F /* Euclid+CoreGraphics.swift in Sources */,
+				F4BFA7983FA32CB84655315328631420 /* Euclid+CoreText.swift in Sources */,
+				A8DBD1D7F91EBD6B4E03F98A30EC7EBF /* Euclid+RealityKit.swift in Sources */,
+				136BAC0BFBCD203662B0506C60B0182F /* Euclid+SceneKit.swift in Sources */,
+				9260A6FCD9D004962F2EA0AEB64E1312 /* Euclid+SIMD.swift in Sources */,
+				BC6B4CAAFA16DEABDE5FD7EBBB5EBB28 /* Euclid+UIKit.swift in Sources */,
+				42774226C39486024892F8AB85543BC3 /* Euclid-dummy.m in Sources */,
+				1378A81F62C86ECB39112C1CEF684AEA /* Line.swift in Sources */,
+				EB73BD363821CB04895D3E92CBCDDCA9 /* LineSegment.swift in Sources */,
+				59D6F8208EDABD663ACED6DECDB7CDF4 /* Mesh.swift in Sources */,
+				69DC1A00E783652A06FF5A5460578ACE /* Mesh+CSG.swift in Sources */,
+				1376C6A73F277E81D190A6F7FE087256 /* Mesh+Shapes.swift in Sources */,
+				AAF8C99E62CAEB1749B14A5A80730777 /* Mesh+STL.swift in Sources */,
+				D0A3E44BE3DEDB7FA2C57A1A62380A94 /* Path.swift in Sources */,
+				4B37AC7C84A830702D2CC42396B42705 /* Path+Shapes.swift in Sources */,
+				07072D721FCA63534C1A5391C2F73584 /* PathPoint.swift in Sources */,
+				39CE998CF1B9AABB4B9410F52E259FD2 /* Plane.swift in Sources */,
+				886B1026D95D1DC60EE23690E8B29F49 /* Polygon.swift in Sources */,
+				403CAE19A002C170DC0F6006FAF87027 /* Polygon+CSG.swift in Sources */,
+				BE1DBDB1AC4CC666F44FB1FF953786C6 /* Quaternion.swift in Sources */,
+				AC749030D2188264368914730E4A7240 /* Rotation.swift in Sources */,
+				000A88390659362283D351E500AFF14D /* Stretchable.swift in Sources */,
+				E48A9F5CFDD5FD950C2A7F88C6396FDD /* Transforms.swift in Sources */,
+				6DCE7EBC10DBB0D9651FBB9F1DFB71C6 /* Utilities.swift in Sources */,
+				3DB01C429F78A3166318F862666D2A2B /* Vector.swift in Sources */,
+				C943C19B647E300AFADB49A07404A0AE /* Vertex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5CC60807617BA59C2C238A8785B91A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCD0B99855F57681AB891B83F1B6BC3 /* Pods-AccessibleNav-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D568501F6FAEAEF2D7DE96C9FB68E3C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Euclid;
+			target = AE47191A99A0611690C277CCDA990A80 /* Euclid */;
+			targetProxy = 4243382EBF4E3B9A74E04AD2AB99515C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1065FC26D28E3CD54FDF416FF93823A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A26B01B83608C8ED894410E6A9A4400C /* Pods-AccessibleNav.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		266C11DDF67302EA2F8E15A7216F136C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B376A442D26AE9E4F08320885D17DF /* Pods-AccessibleNav.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C3FBC45C4966EFE20583918767EFBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C7682D906741FD6AE75168157B5E249D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66EE40D7815FF74CD924802B43439930 /* Euclid.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Euclid/Euclid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Euclid/Euclid-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Euclid/Euclid.modulemap";
+				PRODUCT_MODULE_NAME = Euclid;
+				PRODUCT_NAME = Euclid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7432ABD83063B8F0920C0C672D4CA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83022CCE8945213919471DA4C601342C /* Euclid.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Euclid/Euclid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Euclid/Euclid-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Euclid/Euclid.modulemap";
+				PRODUCT_MODULE_NAME = Euclid;
+				PRODUCT_NAME = Euclid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF0A36149038A192FFD678E1D4A40D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FBC45C4966EFE20583918767EFBE2 /* Debug */,
+				FF0A36149038A192FFD678E1D4A40D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DAE6D16640A0AE82285A8C3AC497A4B /* Build configuration list for PBXNativeTarget "Euclid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7682D906741FD6AE75168157B5E249D /* Debug */,
+				D7432ABD83063B8F0920C0C672D4CA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0EB36625586B225E587542C28D45646 /* Build configuration list for PBXNativeTarget "Pods-AccessibleNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266C11DDF67302EA2F8E15A7216F136C /* Debug */,
+				1065FC26D28E3CD54FDF416FF93823A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

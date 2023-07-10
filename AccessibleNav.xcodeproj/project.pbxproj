@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650BF428F21FEC2219861E02 /* Pods_AccessibleNav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C8C29BEF22244CE46711E4 /* Pods_AccessibleNav.framework */; };
+		AD19E54C2A5B72F100BA7004 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = AD19E54B2A5B72F100BA7004 /* FocusEntity */; };
+		ADBDC5172A5A98CA0087EF64 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDC5162A5A98CA0087EF64 /* ARView.swift */; };
+		ADBDC51B2A5AA07E0087EF64 /* Chair.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = ADBDC51A2A5A9FE20087EF64 /* Chair.rcproject */; };
 		EA0D03E22A5A5A53000543BD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D03E12A5A5A53000543BD /* SplashView.swift */; };
 		EAA8F6DE2A5A524E00A67B97 /* AccessibleNavApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8F6DD2A5A524E00A67B97 /* AccessibleNavApp.swift */; };
 		EAA8F6E02A5A524E00A67B97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */; };
@@ -15,12 +19,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48E4E53B53FE8068A7B45837 /* Pods-AccessibleNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccessibleNav.release.xcconfig"; path = "Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav.release.xcconfig"; sourceTree = "<group>"; };
+		49C8C29BEF22244CE46711E4 /* Pods_AccessibleNav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccessibleNav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBDC5162A5A98CA0087EF64 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		ADBDC51A2A5A9FE20087EF64 /* Chair.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Chair.rcproject; sourceTree = "<group>"; };
 		EA0D03E12A5A5A53000543BD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		EAA8F6DA2A5A524E00A67B97 /* AccessibleNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibleNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA8F6DD2A5A524E00A67B97 /* AccessibleNavApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleNavApp.swift; sourceTree = "<group>"; };
 		EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAA8F6E12A5A525000A67B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA8F6E42A5A525000A67B97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB1E91512BC27B0815839514 /* Pods-AccessibleNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccessibleNav.debug.xcconfig"; path = "Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD19E54C2A5B72F100BA7004 /* FocusEntity in Frameworks */,
+				650BF428F21FEC2219861E02 /* Pods_AccessibleNav.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05E0EB71A116286A076B7BD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49C8C29BEF22244CE46711E4 /* Pods_AccessibleNav.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B09F3AEDF1EE61D1378FCAAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB1E91512BC27B0815839514 /* Pods-AccessibleNav.debug.xcconfig */,
+				48E4E53B53FE8068A7B45837 /* Pods-AccessibleNav.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EAA8F6D12A5A524E00A67B97 = {
 			isa = PBXGroup;
 			children = (
 				EAA8F6DC2A5A524E00A67B97 /* AccessibleNav */,
 				EAA8F6DB2A5A524E00A67B97 /* Products */,
+				B09F3AEDF1EE61D1378FCAAE /* Pods */,
+				05E0EB71A116286A076B7BD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,8 @@
 				EAA8F6DD2A5A524E00A67B97 /* AccessibleNavApp.swift */,
 				EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */,
 				EA0D03E12A5A5A53000543BD /* SplashView.swift */,
+				ADBDC5162A5A98CA0087EF64 /* ARView.swift */,
+				ADBDC51A2A5A9FE20087EF64 /* Chair.rcproject */,
 				EAA8F6E12A5A525000A67B97 /* Assets.xcassets */,
 				EAA8F6E32A5A525000A67B97 /* Preview Content */,
 			);
@@ -77,15 +109,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAA8F6E82A5A525000A67B97 /* Build configuration list for PBXNativeTarget "AccessibleNav" */;
 			buildPhases = (
+				14D7069F508D81BD6926765B /* [CP] Check Pods Manifest.lock */,
 				EAA8F6D62A5A524E00A67B97 /* Sources */,
 				EAA8F6D72A5A524E00A67B97 /* Frameworks */,
 				EAA8F6D82A5A524E00A67B97 /* Resources */,
+				462B3C28DD145ED20679A692 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AccessibleNav;
+			packageProductDependencies = (
+				AD19E54B2A5B72F100BA7004 /* FocusEntity */,
+			);
 			productName = AccessibleNav;
 			productReference = EAA8F6DA2A5A524E00A67B97 /* AccessibleNav.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +151,9 @@
 				Base,
 			);
 			mainGroup = EAA8F6D12A5A524E00A67B97;
+			packageReferences = (
+				AD19E54A2A5B72F100BA7004 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = EAA8F6DB2A5A524E00A67B97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,12 +175,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14D7069F508D81BD6926765B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AccessibleNav-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		462B3C28DD145ED20679A692 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AccessibleNav/Pods-AccessibleNav-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAA8F6D62A5A524E00A67B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EAA8F6E02A5A524E00A67B97 /* ContentView.swift in Sources */,
+				ADBDC51B2A5AA07E0087EF64 /* Chair.rcproject in Sources */,
+				ADBDC5172A5A98CA0087EF64 /* ARView.swift in Sources */,
 				EAA8F6DE2A5A524E00A67B97 /* AccessibleNavApp.swift in Sources */,
 				EA0D03E22A5A5A53000543BD /* SplashView.swift in Sources */,
 			);
@@ -265,15 +349,17 @@
 		};
 		EAA8F6E92A5A525000A67B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB1E91512BC27B0815839514 /* Pods-AccessibleNav.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AccessibleNav/Preview Content\"";
-				DEVELOPMENT_TEAM = K2PWLQ2PSB;
+				DEVELOPMENT_ASSET_PATHS = "AccessibleNav/Preview\\ Content AccessibleNav/Chair.rcproject";
+				DEVELOPMENT_TEAM = DU9L5D5NKB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hello there!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GeoAccessibility.AccessibleNav;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NavigAbility.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -294,15 +380,17 @@
 		};
 		EAA8F6EA2A5A525000A67B97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E4E53B53FE8068A7B45837 /* Pods-AccessibleNav.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AccessibleNav/Preview Content\"";
-				DEVELOPMENT_TEAM = K2PWLQ2PSB;
+				DEVELOPMENT_ASSET_PATHS = "AccessibleNav/Preview\\ Content AccessibleNav/Chair.rcproject";
+				DEVELOPMENT_TEAM = DU9L5D5NKB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hello there!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GeoAccessibility.AccessibleNav;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NavigAbility.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -343,6 +431,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD19E54A2A5B72F100BA7004 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD19E54B2A5B72F100BA7004 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD19E54A2A5B72F100BA7004 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAA8F6D22A5A524E00A67B97 /* Project object */;
 }

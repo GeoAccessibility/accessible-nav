@@ -6,16 +6,22 @@
 //
 
 import SwiftUI
+import RealityKit
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Hello, world!")
+                NavigationLink(destination: ARContentView()) {
+                    Text("Do Something")
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
