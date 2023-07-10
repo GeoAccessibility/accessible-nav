@@ -32,14 +32,12 @@ struct ContentView: View {
                 SignInView()
             case Pages.map:
                 ZStack {
-                    VStack {
-                        Map(
-                            coordinateRegion: $region,
-                            interactionModes: [.all],
-                            showsUserLocation: true,
-                            userTrackingMode: .constant(.follow)
-                        )
-                    }
+                    Map(
+                        coordinateRegion: $region,
+                        interactionModes: [.all],
+                        showsUserLocation: true,
+                        userTrackingMode: .constant(.follow)
+                    )
                     if !self.pager.isNavigating {LocationSelector()
                             .environmentObject(navParams)
                             .environmentObject(pager)
@@ -54,6 +52,20 @@ struct ContentView: View {
                                 .environmentObject(pager)
                                 .frame(width: UIScreen.main.bounds.width)
                                 .shadow(radius: 10)
+                        }
+                    }
+                    if navParams.isPathDisplayed {
+                        HStack {
+                            Spacer(minLength: 200)
+                            VStack {
+                                Spacer()
+                                Image("TripPathThick")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 60)
+                                Spacer(minLength: 398)
+                            }
+                            Spacer()
                         }
                     }
                 }

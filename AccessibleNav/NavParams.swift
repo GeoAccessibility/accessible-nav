@@ -23,4 +23,5 @@ class NavParams: ObservableObject {
     @Published var optCrimeReports: Bool = true
     @Published var optSocialMediaPosts: Bool = false
     @Published var optTrafficReports: Bool = true
+    @Published var isPathDisplayed: Bool = false
 }
