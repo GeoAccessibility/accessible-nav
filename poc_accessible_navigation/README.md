@@ -25,5 +25,5 @@ For user $U$, the cost of a path $p=(v_0, v_1, \ldots, v_n)$ from $v_0=a \in V$ 
 
 #### Finding the shortest path in the graph from source to destination
 For a user $U$, a source and a destination $a,b\in V$, our goal is to find the path $p^{\*}$ from $a$ to $b$ in $G$ with minimal cost, ie solve the following optimization problem:
-$$ p^* = \underset{p \text{ path from } a \text{ to }b}{\arg\min}{c_p(U)}$$
+$$ p^{\*} = \underset{p \text{ path from } a \text{ to }b}{\arg\min}{c_p(U)}$$
 Since weights are only supported by edges, Dijkstra's algorithm provides an efficient way to compute this shortest path.
