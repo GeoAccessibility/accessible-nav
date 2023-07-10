@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct LocationSelector: View {
-    @State private var locationInput: String = ""
+    @EnvironmentObject var navParams: NavParams
+    @EnvironmentObject var pager: Pager
 
     var body: some View {
         ZStack {
@@ -33,7 +34,7 @@ struct LocationSelector: View {
                     }
                     TextField(
                         "Enter your location",
-                        text: $locationInput
+                        text: $navParams.locationInput
                     )
                     .textInputAutocapitalization(.never)
                     .disableAutocorrection(true)
@@ -54,72 +55,89 @@ struct LocationSelector: View {
                         Spacer()
                     }
                     HStack {
-                        ZStack {
-                            Rectangle()
-                                .fill(Color(red: 0.94, green: 0.945, blue: 0.95))
-                                .cornerRadius(5)
-                            HStack {
-                                Image("IconHome")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 25, height: 25)
-                                Text("Home")
-                                Spacer()
+                        Button(action: {
+                            navParams.locationInput = "102 4th Ave E"
+                        }) {
+                            ZStack {
+                                Rectangle()
+                                    .fill(Color(red: 0.94, green: 0.945, blue: 0.95))
+                                    .cornerRadius(5)
+                                HStack {
+                                    Image("IconHome")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 25, height: 25)
+                                    Text("Home")
+                                        .foregroundColor(.black)
+                                    Spacer()
+                                }
+                                .padding()
+                                .frame(width: .infinity, height: 40)
                             }
-                            .padding()
-                            .frame(width: .infinity, height: 40)
                         }
-                        ZStack {
-                            Rectangle()
-                                .fill(Color(red: 0.94, green: 0.945, blue: 0.95))
-                                .cornerRadius(5)
-                            HStack {
-                                Image("IconLocation")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 25, height: 25)
-                                Text("Office")
-                                Spacer()
+                        Button(action: {
+                            navParams.locationInput = "1 Microsoft Way"
+                        }) {
+                            ZStack {
+                                Rectangle()
+                                    .fill(Color(red: 0.94, green: 0.945, blue: 0.95))
+                                    .cornerRadius(5)
+                                HStack {
+                                    Image("IconLocation")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 25, height: 25)
+                                    Text("Office")
+                                        .foregroundColor(.black)
+                                    Spacer()
+                                }
+                                .padding()
+                                .frame(width: .infinity, height: 40)
                             }
-                            .padding()
-                            .frame(width: .infinity, height: 40)
                         }
                     }
                     HStack {
-                        ZStack {
-                            Rectangle()
-                                .fill(Color(red: 0.94, green: 0.945, blue: 0.95))
-                                .cornerRadius(5)
-                            HStack {
-                                Image("IconLocation")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 25, height: 25)
-                                Text("Other")
-                                Spacer()
+                        Button(action: {}) {
+                            ZStack {
+                                Rectangle()
+                                    .fill(Color(red: 0.94, green: 0.945, blue: 0.95))
+                                    .cornerRadius(5)
+                                HStack {
+                                    Image("IconLocation")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 25, height: 25)
+                                    Text("Other")
+                                        .foregroundColor(.black)
+                                    Spacer()
+                                }
+                                .padding()
+                                .frame(width: .infinity, height: 40)
                             }
-                            .padding()
-                            .frame(width: .infinity, height: 40)
                         }
-                        ZStack {
-                            Rectangle()
-                                .fill(Color(red: 0.94, green: 0.945, blue: 0.95))
-                                .cornerRadius(5)
-                            HStack {
-                                Image("IconSearch")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 20, height: 20)
-                                Text("Filters")
-                                    .foregroundColor(.gray)
-                                Spacer()
-                                Image("IconFilter")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 20, height: 20)
+                        Button(action: {
+                            pager.page = Pages.filters
+                        }) {
+                            ZStack {
+                                Rectangle()
+                                    .fill(Color(red: 0.94, green: 0.945, blue: 0.95))
+                                    .cornerRadius(5)
+                                HStack {
+                                    Image("IconSearch")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 20, height: 20)
+                                    Text("Filters")
+                                        .foregroundColor(.gray)
+                                    Spacer()
+                                    Image("IconFilter")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 20, height: 20)
+                                }
+                                .padding()
+                                .frame(width: .infinity, height: 40)
                             }
-                            .padding()
-                            .frame(width: .infinity, height: 40)
                         }
                     }
                     ZStack {
@@ -148,6 +166,7 @@ struct LocationSelector: View {
 }
 
 struct LocationSelector_Preview: PreviewProvider {
+    @StateObject static var navParams: NavParams = NavParams()
     static var previews: some View {
         VStack {
             Rectangle()
@@ -156,6 +175,7 @@ struct LocationSelector_Preview: PreviewProvider {
                     height: 0.5 * UIScreen.main.bounds.height
                 )
             LocationSelector()
+                .environmentObject(navParams)
         }
     }
 }
