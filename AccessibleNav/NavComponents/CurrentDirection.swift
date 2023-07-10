@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CurrentDirection: View {
-    @State private var direction: String = "E 17th Ave"
-    @State private var details: String = "toward Victor St"
+    @State private var direction: String = "Adams Lane NE"
+    @State private var details: String = "toward Cowlitz Rd"
     @State private var currentArrow: String = "⬆️"
 
     var body: some View {
@@ -55,7 +55,7 @@ struct CurrentDirection: View {
 }
 
 struct NextDirection: View {
-    @State private var nextArrow: String = "➡️"
+    @State private var nextArrow: String = "⬅️"
     var body: some View {
         ZStack {
             Rectangle()

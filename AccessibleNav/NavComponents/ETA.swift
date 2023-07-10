@@ -67,7 +67,7 @@ struct ETA: View {
                                 .fill(Color(red: 0.3, green: 0.3, blue: 0.3))
                                 .cornerRadius(10)
                                 .frame(width: .infinity, height: 48)
-                            Text("Exit")
+                            Text("Get Started")
                                 .fontWeight(.regular)
                                 .foregroundColor(.blue)
                                 .font(.system(size: 18))
