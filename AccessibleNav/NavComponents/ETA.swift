@@ -14,6 +14,7 @@ struct ETA: View {
 
     var body: some View {
         VStack {
+            Spacer(minLength: 0.6 * UIScreen.main.bounds.height)
             ZStack {
                 Rectangle()
                     .fill(.white)
@@ -88,17 +89,7 @@ struct ETA: View {
 struct ETA_Preview: PreviewProvider {
     static var previews: some View {
         VStack {
-            Rectangle()
-                .frame(
-                    width: .infinity,
-                    height: 0.7 * UIScreen.main.bounds.height
-                )
             ETA()
-            Rectangle()
-                .frame(
-                    width: .infinity,
-                    height: 0.05 * UIScreen.main.bounds.height
-                )
         }
     }
 }
