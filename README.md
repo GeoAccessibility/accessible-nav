@@ -20,6 +20,15 @@ This feature allows our users to do informed decisions about which road to choos
 <img src="https://github.com/GeoAccessibility/accessible-nav/assets/7455707/4921f946-f7a6-4b78-99de-a09b689f2f95" width=300 />
 <img src="https://github.com/GeoAccessibility/accessible-nav/assets/7455707/b5187396-3867-4797-8a6e-5a17dffa4377" width=300 />
 
+## iOS Application
+
+The NavigAbility iOS app features an Apple Maps view, buttons for common destinations and routes with estimated arrival times, total time and distance.
+
+<img width="200" alt="Splash Screen" src="https://github.com/GeoAccessibility/accessible-nav/assets/60060421/da102dac-40b9-40c2-96d6-b1078a85bbe1">
+<img width="200" alt="Main Screen" src="https://github.com/GeoAccessibility/accessible-nav/assets/60060421/1bfbbeed-c41a-480f-9c33-dc86a235b1ae">
+<img width="200" alt="Filter Screen" src="https://github.com/GeoAccessibility/accessible-nav/assets/60060421/3f29f7d3-56c4-4c6d-bf89-4fb2d5763460">
+<img width="200" alt="Navigation Screen" src="https://github.com/GeoAccessibility/accessible-nav/assets/60060421/f328a128-bbef-46fe-a74a-180d2dbb0212">
+
 
 ---
 **Statement**
