@@ -17,6 +17,7 @@
 		EAA8F6E02A5A524E00A67B97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */; };
 		EAA8F6E22A5A525000A67B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA8F6E12A5A525000A67B97 /* Assets.xcassets */; };
 		EAA8F6E52A5A525000A67B97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA8F6E42A5A525000A67B97 /* Preview Assets.xcassets */; };
+		EAF3BC8B2A5B681600DD3FF5 /* NavParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3BC8A2A5B681600DD3FF5 /* NavParams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAA8F6E12A5A525000A67B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA8F6E42A5A525000A67B97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAF3BC8A2A5B681600DD3FF5 /* NavParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavParams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				EAA8F6DD2A5A524E00A67B97 /* AccessibleNavApp.swift */,
 				EAA8F6DF2A5A524E00A67B97 /* ContentView.swift */,
+				EAF3BC8A2A5B681600DD3FF5 /* NavParams.swift */,
 				EA1267062A5ADF2100D28CC0 /* ETA.swift */,
 				EA0D03E32A5A7BF1000543BD /* SignInView.swift */,
 				EA0D03E12A5A5A53000543BD /* SplashView.swift */,
@@ -157,6 +160,7 @@
 			files = (
 				EA95C0212A5A98F00078E0F7 /* LocationSelector.swift in Sources */,
 				EAA8F6E02A5A524E00A67B97 /* ContentView.swift in Sources */,
+				EAF3BC8B2A5B681600DD3FF5 /* NavParams.swift in Sources */,
 				EAA8F6DE2A5A524E00A67B97 /* AccessibleNavApp.swift in Sources */,
 				EA95C0232A5AB8040078E0F7 /* CurrentDirection.swift in Sources */,
 				EA0D03E42A5A7BF1000543BD /* SignInView.swift in Sources */,

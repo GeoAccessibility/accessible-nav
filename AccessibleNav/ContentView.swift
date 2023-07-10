@@ -11,11 +11,16 @@ enum Pages {
     case splash, signin, newTrip, filters, navigation
 }
 
+class Pager: ObservableObject {
+    @Published var page: Pages = Pages.splash
+}
+
 struct ContentView: View {
-    @State var page: Pages = Pages.splash
+    @StateObject var pager: Pager = Pager()
+    @StateObject var navParams: NavParams = NavParams()
     var body: some View {
         ZStack {
-            switch page {
+            switch pager.page {
             case Pages.splash:
                 SplashView()
             case Pages.signin:
@@ -28,12 +33,16 @@ struct ContentView: View {
                     VStack {
                         Spacer(minLength: 0.5 * UIScreen.main.bounds.height)
                         LocationSelector()
+                            .environmentObject(navParams)
+                            .environmentObject(pager)
                             .frame(width: UIScreen.main.bounds.width)
                             .shadow(radius: 10)
                     }
                 }
             case Pages.filters:
                 FilterSelectorView()
+                    .environmentObject(navParams)
+                    .environmentObject(pager)
             case Pages.navigation:
                 ZStack {
                     Image("Map")
@@ -57,7 +66,7 @@ struct ContentView: View {
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 withAnimation {
-                    self.page = Pages.newTrip
+                    self.pager.page = Pages.newTrip
                 }
             }
         }

@@ -8,15 +8,8 @@
 import SwiftUI
 
 struct FilterSelectorView: View {
-    @State private var locationInput: String = ""
-    @State private var optAvoidCrowds: Bool = true
-    @State private var optAccessibleParking: Bool = true
-    @State private var optBrailleSignage: Bool = false
-    @State private var optElevation: Float = 18
-    @State private var optCrimeReports: Bool = true
-    @State private var optSocialMediaPosts: Bool = false
-    @State private var optTrafficReports: Bool = true
-
+    @EnvironmentObject var navParams: NavParams
+    @EnvironmentObject var pager: Pager
     
     var body: some View {
         VStack {
@@ -29,9 +22,9 @@ struct FilterSelectorView: View {
                         .font(.system(size: 22))
                     Spacer()
                 }
-                Toggle("Avoid crowds", isOn: $optAvoidCrowds)
-                Toggle("Accessible parking", isOn: $optAccessibleParking)
-                Toggle("Braille signage", isOn: $optBrailleSignage)
+                Toggle("Avoid crowds", isOn: $navParams.optAvoidCrowds)
+                Toggle("Accessible parking", isOn: $navParams.optAccessibleParking)
+                Toggle("Braille signage", isOn: $navParams.optBrailleSignage)
             }
             Spacer()
             VStack { // Elevation
@@ -43,8 +36,8 @@ struct FilterSelectorView: View {
                     Spacer()
                 }
                 HStack {
-                    Slider(value: $optElevation, in: 0...40)
-                    Text("\(String(Int(optElevation))) km")
+                    Slider(value: $navParams.optElevation, in: 0...40)
+                    Text("\(String(Int(navParams.optElevation))) km")
                 }
             }
             Spacer()
@@ -57,21 +50,21 @@ struct FilterSelectorView: View {
                     Spacer()
                 }
                 HStack {
-                    Toggle("", isOn: $optCrimeReports)
+                    Toggle("", isOn: $navParams.optCrimeReports)
                         .frame(width: 57)
                     Spacer()
                     Text("Crime Reports")
                     Spacer()
                 }
                 HStack {
-                    Toggle("", isOn: $optSocialMediaPosts)
+                    Toggle("", isOn: $navParams.optSocialMediaPosts)
                         .frame(width: 57)
                     Spacer()
                     Text("Social Media Posts")
                     Spacer()
                 }
                 HStack {
-                    Toggle("", isOn: $optTrafficReports)
+                    Toggle("", isOn: $navParams.optTrafficReports)
                         .frame(width: 57)
                     Spacer()
                     Text("Traffic Reports")
@@ -90,15 +83,19 @@ struct FilterSelectorView: View {
                         .foregroundColor(.blue)
                         .font(.system(size: 18))
                 }
-                ZStack {
-                    Rectangle()
-                        .fill(.blue)
-                        .cornerRadius(10)
-                        .frame(width: .infinity, height: 48)
-                    Text("Get Started")
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
+                Button(action: {
+                    pager.page = Pages.newTrip
+                }) {
+                    ZStack {
+                        Rectangle()
+                            .fill(.blue)
+                            .cornerRadius(10)
+                            .frame(width: .infinity, height: 48)
+                        Text("Done")
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .font(.system(size: 18))
+                    }
                 }
             }
             Spacer()
@@ -108,7 +105,9 @@ struct FilterSelectorView: View {
 }
 
 struct FilterSelectorView_Preview: PreviewProvider {
+    @StateObject static var navParams: NavParams = NavParams()
     static var previews: some View {
         FilterSelectorView()
+            .environmentObject(navParams)
     }
 }
