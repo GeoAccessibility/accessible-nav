@@ -84,7 +84,7 @@ struct FilterSelectorView: View {
                         .font(.system(size: 18))
                 }
                 Button(action: {
-                    pager.page = Pages.newTrip
+                    pager.page = Pages.map
                 }) {
                     ZStack {
                         Rectangle()

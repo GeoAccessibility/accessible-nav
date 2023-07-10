@@ -11,6 +11,7 @@ struct ETA: View {
     @State private var arrivalBy: String = "8:32"
     @State private var time: String = "16"
     @State private var distance: String = "2.5"
+    @EnvironmentObject var pager: Pager
 
     var body: some View {
         VStack {
@@ -58,25 +59,20 @@ struct ETA: View {
                         Spacer()
                     }
                     Spacer(minLength: 30)
-                    ZStack {
-                        Rectangle()
-                            .fill(Color(red: 0.3, green: 0.3, blue: 0.3))
-                            .cornerRadius(10)
-                            .frame(width: .infinity, height: 48)
-                        HStack {
-                            Image("IconPaperPlane")
-                                .resizable()
-                                .renderingMode(.template)
-                                .foregroundColor(.blue)
-                                .scaledToFit()
-                                .frame(width: 20, height: 20)
-                            Text("Get Started")
+                    Button(action: {
+                        pager.isNavigating = false
+                    }) {
+                        ZStack {
+                            Rectangle()
+                                .fill(Color(red: 0.3, green: 0.3, blue: 0.3))
+                                .cornerRadius(10)
+                                .frame(width: .infinity, height: 48)
+                            Text("Exit")
                                 .fontWeight(.regular)
                                 .foregroundColor(.blue)
                                 .font(.system(size: 18))
                         }
                     }
-
                     Spacer()
                 }
                 .padding()
