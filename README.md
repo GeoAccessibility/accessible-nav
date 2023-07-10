@@ -20,6 +20,10 @@ This feature allows our users to do informed decisions about which road to choos
 <img src="https://github.com/GeoAccessibility/accessible-nav/assets/7455707/4921f946-f7a6-4b78-99de-a09b689f2f95" width=300 />
 <img src="https://github.com/GeoAccessibility/accessible-nav/assets/7455707/b5187396-3867-4797-8a6e-5a17dffa4377" width=300 />
 
+Using RealityKit will also allow users to use Apple Vision Pro once it releases. 
+
+To see the functionallity and logic behind this feature, go to the [AR branch](https://github.com/GeoAccessibility/accessible-nav/blob/AR/AccessibleNav/ARView.swift).
+
 ## iOS Application
 
 The NavigAbility iOS app features an Apple Maps view, buttons for common destinations and routes with estimated arrival times, total time and distance.
