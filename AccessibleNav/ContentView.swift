@@ -6,18 +6,23 @@
 //
 
 import SwiftUI
+import MapKit
 
 enum Pages {
-    case splash, signin, newTrip, filters, navigation
+    case splash, signin, map, filters
 }
 
 class Pager: ObservableObject {
     @Published var page: Pages = Pages.splash
+    @Published var isNavigating: Bool = false
 }
+
 
 struct ContentView: View {
     @StateObject var pager: Pager = Pager()
     @StateObject var navParams: NavParams = NavParams()
+    @State var locationManager: CLLocationManager = CLLocationManager()
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 47.627499, longitude: -122.318783), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
     var body: some View {
         ZStack {
             switch pager.page {
@@ -25,39 +30,44 @@ struct ContentView: View {
                 SplashView()
             case Pages.signin:
                 SignInView()
-            case Pages.newTrip:
+            case Pages.map:
                 ZStack {
-                    Image("Map")
-                        .resizable()
-                        .scaledToFill()
-                    LocationSelector()
-                        .environmentObject(navParams)
-                        .environmentObject(pager)
-                        .frame(width: UIScreen.main.bounds.width)
-                        .shadow(radius: 10)
+                    VStack {
+                        Map(
+                            coordinateRegion: $region,
+                            interactionModes: [.all],
+                            showsUserLocation: true,
+                            userTrackingMode: .constant(.follow)
+                        )
+                    }
+                    if !self.pager.isNavigating {LocationSelector()
+                            .environmentObject(navParams)
+                            .environmentObject(pager)
+                            .frame(width: UIScreen.main.bounds.width)
+                            .shadow(radius: 10)
+                    } else {
+                        ZStack {
+                            CurrentDirection()
+                                .frame(width: UIScreen.main.bounds.width)
+                                .shadow(radius: 10)
+                            ETA()
+                                .environmentObject(pager)
+                                .frame(width: UIScreen.main.bounds.width)
+                                .shadow(radius: 10)
+                        }
+                    }
                 }
             case Pages.filters:
                 FilterSelectorView()
                     .environmentObject(navParams)
                     .environmentObject(pager)
-            case Pages.navigation:
-                ZStack {
-                    Image("Map")
-                        .resizable()
-                        .scaledToFill()
-                    CurrentDirection()
-                        .frame(width: UIScreen.main.bounds.width)
-                        .shadow(radius: 10)
-                    ETA()
-                        .frame(width: UIScreen.main.bounds.width)
-                        .shadow(radius: 10)
-                }
             }
         }
         .onAppear {
+            locationManager.requestWhenInUseAuthorization()
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 withAnimation {
-                    self.pager.page = Pages.newTrip
+                    self.pager.page = Pages.map
                 }
             }
         }

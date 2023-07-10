@@ -142,20 +142,24 @@ struct LocationSelector: View {
                                 }
                             }
                         }
-                        ZStack {
-                            Rectangle()
-                                .fill(.blue)
-                                .cornerRadius(10)
-                                .frame(width: .infinity, height: 48)
-                            HStack {
-                                Image("IconPaperPlane")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 20, height: 20)
-                                Text("Get Started")
-                                    .fontWeight(.regular)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 18))
+                        Button(action: {
+                            pager.isNavigating = true
+                        }) {
+                            ZStack {
+                                Rectangle()
+                                    .fill(.blue)
+                                    .cornerRadius(10)
+                                    .frame(width: .infinity, height: 48)
+                                HStack {
+                                    Image("IconPaperPlane")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 20, height: 20)
+                                    Text("Get Started")
+                                        .fontWeight(.regular)
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 18))
+                                }
                             }
                         }
                         Spacer()
