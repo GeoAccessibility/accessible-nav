@@ -48,6 +48,7 @@ struct CurrentDirection: View {
                 NextDirection()
                 Spacer()
             }
+            Spacer(minLength: 0.7 * UIScreen.main.bounds.height)
         }
         .padding()
     }
@@ -72,17 +73,7 @@ struct NextDirection: View {
 struct CurrentDirection_Preview: PreviewProvider {
     static var previews: some View {
         VStack {
-            Rectangle()
-                .frame(
-                    width: .infinity,
-                    height: 0.05 * UIScreen.main.bounds.height
-                )
             CurrentDirection()
-            Rectangle()
-                .frame(
-                    width: .infinity,
-                    height: 0.7 * UIScreen.main.bounds.height
-                )
         }
     }
 }

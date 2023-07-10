@@ -30,14 +30,11 @@ struct ContentView: View {
                     Image("Map")
                         .resizable()
                         .scaledToFill()
-                    VStack {
-                        Spacer(minLength: 0.5 * UIScreen.main.bounds.height)
-                        LocationSelector()
-                            .environmentObject(navParams)
-                            .environmentObject(pager)
-                            .frame(width: UIScreen.main.bounds.width)
-                            .shadow(radius: 10)
-                    }
+                    LocationSelector()
+                        .environmentObject(navParams)
+                        .environmentObject(pager)
+                        .frame(width: UIScreen.main.bounds.width)
+                        .shadow(radius: 10)
                 }
             case Pages.filters:
                 FilterSelectorView()
@@ -48,18 +45,12 @@ struct ContentView: View {
                     Image("Map")
                         .resizable()
                         .scaledToFill()
-                    VStack {
-                        CurrentDirection()
-                            .frame(width: UIScreen.main.bounds.width)
-                            .shadow(radius: 10)
-                        Spacer(minLength: 0.7 * UIScreen.main.bounds.height)
-                    }
-                    VStack {
-                        Spacer(minLength: 0.6 * UIScreen.main.bounds.height)
-                        ETA()
-                            .frame(width: UIScreen.main.bounds.width)
-                            .shadow(radius: 10)
-                    }
+                    CurrentDirection()
+                        .frame(width: UIScreen.main.bounds.width)
+                        .shadow(radius: 10)
+                    ETA()
+                        .frame(width: UIScreen.main.bounds.width)
+                        .shadow(radius: 10)
                 }
             }
         }
